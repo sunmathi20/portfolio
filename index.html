@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunmathi S | Full Stack Developer & AI System Builder</title>
+    <meta name="description" content="Sunmathi S — Full Stack Developer, AI System Builder, and Creative Frontend Engineer. Explore my cinematic interactive portfolio featuring cutting-edge projects and premium UI/UX.">
+    <meta name="keywords" content="Sunmathi, Full Stack Developer, AI Builder, Portfolio, React, FastAPI, Three.js">
+    <meta name="author" content="Sunmathi S">
+    <meta property="og:title" content="Sunmathi S | Digital Portfolio">
+    <meta property="og:description" content="Full Stack Developer & AI System Builder — An immersive interactive portfolio experience.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CUSTOM CURSOR                               -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- ANIMATED BACKGROUND                         -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="bg-gradient-layer">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+        <div class="gradient-blob blob-4"></div>
+    </div>
+    <div class="mesh-overlay"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- PREMIUM TOP NAVIGATION                      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <nav class="nav-bar" id="nav-bar">
+        <a href="#hero" class="nav-logo">
+            <span class="logo-symbol">S</span>
+            <span class="logo-text">Sunmathi</span>
+        </a>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link active" data-section="hero">
+                <span class="nav-icon">⌂</span>
+                <span>Home</span>
+            </a>
+            <a href="#about" class="nav-link" data-section="about">
+                <span class="nav-icon">◈</span>
+                <span>About</span>
+            </a>
+            <a href="#skills" class="nav-link" data-section="skills">
+                <span class="nav-icon">◆</span>
+                <span>Skills</span>
+            </a>
+            <a href="#projects" class="nav-link" data-section="projects">
+                <span class="nav-icon">▣</span>
+                <span>Projects</span>
+            </a>
+            <a href="#experience" class="nav-link" data-section="experience">
+                <span class="nav-icon">◎</span>
+                <span>Experience</span>
+            </a>
+            <a href="#contact" class="nav-link" data-section="contact">
+                <span class="nav-icon">✦</span>
+                <span>Contact</span>
+            </a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon">🌙</span>
+        </button>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- HERO SECTION                                -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="hero" class="section">
+        <div class="hero-container">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-name">
+                    Hi, I'm<br>
+                    <span class="gradient-text">Sunmathi S</span>
+                </h1>
+                <div class="hero-roles">
+                    <div class="role-text">Full Stack Developer</div>
+                </div>
+                <p class="hero-description">
+                    Building the future with code — from AI-powered systems to cinematic web experiences. 
+                    I transform complex ideas into elegant, high-performance digital solutions.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">
+                        <span>Explore Portfolio</span>
+                    </a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
+                <div class="hero-stats-mini">
+                    <div class="mini-stat">
+                        <span class="mini-stat-num">3+</span>
+                        <span class="mini-stat-label">Projects</span>
+                    </div>
+                    <div class="mini-stat">
+                        <span class="mini-stat-num">9+</span>
+                        <span class="mini-stat-label">Technologies</span>
+                    </div>
+                    <div class="mini-stat">
+                        <span class="mini-stat-num">2+</span>
+                        <span class="mini-stat-label">Internships</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-image-container">
+                        <img src="profile.jpg" alt="Sunmathi S — Full Stack Developer" id="hero-photo" 
+                             onerror="this.onerror=null; if(this.src.includes('profile.jpg')){this.src='profile.png';}else{this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';}">
+                        <div id="avatar-fallback" class="avatar-fallback">S</div>
+                    </div>
+                    <div class="hero-float-element float-el-1">
+                        <span>⚡</span> React.js
+                    </div>
+                    <div class="hero-float-element float-el-2">
+                        <span>🧠</span> AI Builder
+                    </div>
+                    <div class="hero-float-element float-el-3">
+                        <span>🚀</span> FastAPI
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- ABOUT SECTION                               -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="about" class="section">
+        <div class="section-header reveal">
+            <div class="section-label">— About Me —</div>
+            <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-left reveal" data-delay="100">
+                <p class="about-text">
+                    I'm a passionate <strong>Full Stack Developer</strong> and <strong>AI System Builder</strong> 
+                    with a unique journey from mathematics to cutting-edge technology. My background in mathematics 
+                    gives me a deep analytical edge in problem-solving, which I combine with modern web technologies 
+                    to build intelligent, high-performance applications.
+                </p>
+                <p class="about-text" style="margin-top: 1rem;">
+                    Currently pursuing my <strong>MCA</strong>, I specialize in building full-stack applications 
+                    with <strong>React.js</strong>, <strong>FastAPI</strong>, and <strong>PostgreSQL</strong>, 
+                    along with real-time systems using <strong>WebSockets</strong> and <strong>Three.js</strong> 
+                    for immersive 3D web experiences.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-card reveal" data-delay="200">
+                        <div class="stat-number" data-count="3">0</div>
+                        <div class="stat-label">Major Projects</div>
+                    </div>
+                    <div class="stat-card reveal" data-delay="300">
+                        <div class="stat-number" data-count="9">0</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-card reveal" data-delay="400">
+                        <div class="stat-number" data-count="2">0</div>
+                        <div class="stat-label">Internships</div>
+                    </div>
+                    <div class="stat-card reveal" data-delay="500">
+                        <div class="stat-number" data-count="100">0</div>
+                        <div class="stat-label">% Passion</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-right">
+                <div class="timeline">
+                    <div class="timeline-item reveal" data-delay="100">
+                        <div class="year">Foundation</div>
+                        <div class="title">Mathematics Student</div>
+                        <div class="desc">Built strong analytical and logical foundations through advanced mathematics.</div>
+                    </div>
+                    <div class="timeline-item reveal" data-delay="200">
+                        <div class="year">Academic Growth</div>
+                        <div class="title">MCA Student</div>
+                        <div class="desc">Pursuing Master of Computer Applications — bridging math with modern computing.</div>
+                    </div>
+                    <div class="timeline-item reveal" data-delay="300">
+                        <div class="year">Skill Building</div>
+                        <div class="title">Web Developer</div>
+                        <div class="desc">Mastered frontend and backend technologies to build responsive web applications.</div>
+                    </div>
+                    <div class="timeline-item reveal" data-delay="400">
+                        <div class="year">Professional</div>
+                        <div class="title">Full Stack Developer</div>
+                        <div class="desc">End-to-end application development with React, FastAPI, and PostgreSQL.</div>
+                    </div>
+                    <div class="timeline-item reveal" data-delay="500">
+                        <div class="year">Current</div>
+                        <div class="title">AI System Builder</div>
+                        <div class="desc">Building intelligent systems with AI integration and real-time 3D simulations.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SKILLS SECTION                              -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="skills" class="section">
+        <div class="section-header reveal">
+            <div class="section-label">— Tech Arsenal —</div>
+            <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card reveal" data-delay="0">
+                <div class="skill-icon">🐍</div>
+                <div class="skill-name">Python</div>
+                <div class="skill-desc">Backend, AI & Automation</div>
+                <div class="skill-level"><div class="skill-level-bar" data-level="90"></div></div>
+            </div>
+            <div class="skill-card reveal" data-delay="50">
+                <div class="skill-icon">⚡</div>
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-desc">Frontend & Full Stack</div>
+                <div class="skill-level"><div class="skill-level-bar" data-level="88"></div></div>
+            </div>
+            <div class="skill-card reveal" data-delay="100">
+                <div class="skill-icon">⚛️</div>
+                <div class="skill-name">React.js</div>
+                <div class="skill-desc">UI Components & SPAs</div>
+                <div class="skill-level"><div class="skill-level-bar" data-level="85"></div></div>
+            </div>
+            <div class="skill-card reveal" data-delay="150">
+                <div class="skill-icon">🚀</div>
+                <div class="skill-name">FastAPI</div>
+                <div class="skill-desc">High-Performance APIs</div>
+                <div class="skill-level"><div class="skill-level-bar" data-level="87"></div></div>
+            </div>
+            <div class="skill-card reveal" data-delay="200">
+                <div class="skill-icon">🐘</div>
+                <div class="skill-name">PostgreSQL</div>
+                <div class="skill-desc">Database Architecture</div>
+                <div class="skill-level"><div class="skill-level-bar" data-level="80"></div></div>
+            </div>
+            <div class="skill-card reveal" data-delay="250">
+                <div class="skill-icon">🌐</div>
+                <div class="skill-name">Three.js</div>
+                <div class="skill-desc">3D Web Experiences</div>
+                <div class="skill-level"><div class="skill-level-bar" data-level="75"></div></div>
+            </div>
+            <div class="skill-card reveal" data-delay="300">
+                <div class="skill-icon">🎨</div>
+                <div class="skill-name">Tailwind CSS</div>
+                <div class="skill-desc">Rapid UI Styling</div>
+                <div class="skill-level"><div class="skill-level-bar" data-level="82"></div></div>
+            </div>
+            <div class="skill-card reveal" data-delay="350">
+                <div class="skill-icon">📡</div>
+                <div class="skill-name">WebSockets</div>
+                <div class="skill-desc">Real-Time Communication</div>
+                <div class="skill-level"><div class="skill-level-bar" data-level="78"></div></div>
+            </div>
+            <div class="skill-card reveal" data-delay="400">
+                <div class="skill-icon">🔐</div>
+                <div class="skill-name">JWT Auth</div>
+                <div class="skill-desc">Security & Authentication</div>
+                <div class="skill-level"><div class="skill-level-bar" data-level="83"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- PROJECTS SECTION                            -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="projects" class="section">
+        <div class="section-header reveal">
+            <div class="section-label">— Portfolio —</div>
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        </div>
+
+        <!-- Featured Project Showcase -->
+        <div class="featured-project reveal">
+            <div class="featured-badge">🏆 Featured Project</div>
+            <div class="featured-grid">
+                <div class="featured-visual">
+                    <div class="featured-screen">
+                        <div class="screen-header">
+                            <span class="screen-dot red"></span>
+                            <span class="screen-dot yellow"></span>
+                            <span class="screen-dot green"></span>
+                        </div>
+                        <div class="screen-content">
+                            <div class="screen-line" style="width: 60%;"></div>
+                            <div class="screen-line" style="width: 80%;"></div>
+                            <div class="screen-line" style="width: 45%;"></div>
+                            <div class="screen-block"></div>
+                            <div class="screen-line" style="width: 70%;"></div>
+                            <div class="screen-line" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                    <div class="featured-tech-float">
+                        <span class="tech-float-icon">⚛️</span>
+                        <span class="tech-float-icon">🐍</span>
+                        <span class="tech-float-icon">🌐</span>
+                        <span class="tech-float-icon">🐘</span>
+                    </div>
+                </div>
+                <div class="featured-info">
+                    <h3 class="featured-title">Satellite Collision Avoidance System</h3>
+                    <p class="featured-desc">
+                        An advanced real-time satellite tracking and collision prediction system using 3D visualization 
+                        with Three.js. Features orbital mechanics simulation, conjunction analysis, and automated 
+                        avoidance maneuver calculations — protecting space assets from catastrophic collisions.
+                    </p>
+                    <div class="featured-tech-tags">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Three.js</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">WebSockets</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="featured-cta">
+                        <a href="#" class="btn-primary"><span>View Project</span></a>
+                        <a href="#" class="btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid">
+            <div class="project-card reveal" data-delay="100">
+                <div class="project-image" style="background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(168,85,247,0.2));">
+                    <div class="project-icon">🛰️</div>
+                </div>
+                <div class="project-content">
+                    <div class="project-tag">Space Tech</div>
+                    <h3 class="project-title">RPOD Mission Simulation System</h3>
+                    <p class="project-desc">
+                        Real-time Rendezvous, Proximity Operations, and Docking simulation system with 3D 
+                        visualization. Simulates spacecraft approach sequences with physics-based trajectory 
+                        modeling and mission control interfaces.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Three.js</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">WebSockets</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal" data-delay="200">
+                <div class="project-image" style="background: linear-gradient(135deg, rgba(236,72,153,0.2), rgba(255,107,53,0.2));">
+                    <div class="project-icon">🏭</div>
+                </div>
+                <div class="project-content">
+                    <div class="project-tag">Business Website</div>
+                    <h3 class="project-title">Sri Senthil Aandavar Polysacks</h3>
+                    <p class="project-desc">
+                        Professional business website for a polysack manufacturing company. Features responsive 
+                        design, product catalog, contact forms, and modern UI with smooth animations — 
+                        delivering a premium digital presence.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- EXPERIENCE SECTION                          -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="experience" class="section">
+        <div class="section-header reveal">
+            <div class="section-label">— Experience —</div>
+            <h2 class="section-title">Professional <span class="gradient-text">Journey</span></h2>
+        </div>
+        <div class="experience-container">
+            <div class="experience-card reveal" data-delay="100">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-role">Full Stack Developer Intern</div>
+                        <div class="exp-company">ISRO — Indian Space Research Organisation</div>
+                    </div>
+                    <div class="exp-date">2024 – 2025</div>
+                </div>
+                <p class="exp-desc">
+                    Developed satellite collision avoidance systems and RPOD mission simulations using 
+                    React.js, Three.js, and FastAPI. Built real-time 3D visualization dashboards for 
+                    mission-critical space operations and contributed to space safety infrastructure.
+                </p>
+                <div class="exp-tech">
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Three.js</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">WebSockets</span>
+                </div>
+            </div>
+            <div class="experience-card reveal" data-delay="200">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-role">Web Developer Intern</div>
+                        <div class="exp-company">Sri Senthil Aandavar Polysacks</div>
+                    </div>
+                    <div class="exp-date">2024</div>
+                </div>
+                <p class="exp-desc">
+                    Designed and developed a complete professional business website for the manufacturing company. 
+                    Implemented modern responsive design, product showcase features, and optimized performance 
+                    for an enhanced digital presence.
+                </p>
+                <div class="exp-tech">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Responsive Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- RESUME SECTION                              -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="resume" class="section" style="min-height: auto; padding: 4rem 5%;">
+        <div class="resume-cta reveal">
+            <div class="resume-card">
+                <div class="resume-icon">📄</div>
+                <h3 class="resume-title">Download My Resume</h3>
+                <p class="resume-desc">Get a detailed overview of my skills, experience, and qualifications.</p>
+                <a href="resume.pdf" download class="btn-primary" id="download-resume"><span>Download Resume</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CONTACT SECTION                             -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="contact" class="section">
+        <div class="section-header reveal">
+            <div class="section-label">— Get In Touch —</div>
+            <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        </div>
+        <div class="contact-container">
+            <form class="contact-form" id="contact-form">
+                <div class="form-row">
+                    <div class="form-group reveal" data-delay="100">
+                        <input type="text" class="form-input" id="name-input" placeholder=" " required>
+                        <label class="form-label" for="name-input">Your Name</label>
+                    </div>
+                    <div class="form-group reveal" data-delay="150">
+                        <input type="email" class="form-input" id="email-input" placeholder=" " required>
+                        <label class="form-label" for="email-input">Your Email</label>
+                    </div>
+                </div>
+                <div class="form-group reveal" data-delay="200">
+                    <input type="text" class="form-input" id="subject-input" placeholder=" ">
+                    <label class="form-label" for="subject-input">Subject</label>
+                </div>
+                <div class="form-group reveal" data-delay="250">
+                    <textarea class="form-textarea" id="message-input" placeholder=" " required></textarea>
+                    <label class="form-label" for="message-input">Your Message</label>
+                </div>
+                <button type="submit" class="btn-submit reveal" data-delay="300">
+                    <span>Send Message</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+            </form>
+            <div class="social-links reveal" data-delay="400">
+                <a href="https://github.com/sunmathi20" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/sunmathi" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="mailto:sunmathisathishkumar2003@gmail.com" class="social-link" aria-label="Email" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
+                </a>
+            </div>
+            <div class="form-success" id="form-success">
+                <div class="success-icon">✨</div>
+                <div class="success-text">Message sent successfully!</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FOOTER                                      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer class="footer">
+        <p class="footer-text">
+            © 2025 <strong>Sunmathi S</strong> — All rights reserved.
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="scroll-effects.js"></script>
+
+</body>
+</html>
